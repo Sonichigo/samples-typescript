@@ -1,0 +1,45 @@
+version: api.keploy-enterprise.io/v1beta1
+kind: Http
+name: test-79
+spec:
+    metadata: {}
+    req:
+        method: GET
+        proto_major: 1
+        proto_minor: 1
+        url: http://localhost:8000/student/0%C2%92%1E%C2%A2%F4%8D%A4%B9%12%C3%A0~
+        header:
+            Accept-Encoding: gzip
+            Host: localhost:8000
+            User-Agent: Go-http-client/1.1
+        body: ""
+        body_type: ""
+        timestamp: 2024-03-19T16:56:12.711810791+05:30
+        host: ""
+    resp:
+        status_code: 200
+        header:
+            Connection: keep-alive
+            Content-Length: "2"
+            Content-Type: application/json; charset=utf-8
+            Date: Tue, 19 Mar 2024 11:26:12 GMT
+            Etag: W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"
+            Keep-Alive: timeout=5
+            X-Powered-By: Express
+        body: '[]'
+        body_type: ""
+        status_message: ""
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-03-19T16:56:12.817794231+05:30
+    objects: []
+    assertions:
+        noise:
+            header.Date: []
+    created: 1710847572
+curl: |
+    curl --request GET \
+      --url http://localhost:8000/student/0%C2%92%1E%C2%A2%F4%8D%A4%B9%12%C3%A0~ \
+      --header 'User-Agent: Go-http-client/1.1' \
+      --header 'Accept-Encoding: gzip' \
+      --header 'Host: localhost:8000' \

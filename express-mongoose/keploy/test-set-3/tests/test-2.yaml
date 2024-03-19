@@ -1,0 +1,49 @@
+version: api.keploy-enterprise.io/v1beta1
+kind: Http
+name: test-2
+spec:
+    metadata: {}
+    req:
+        method: POST
+        proto_major: 1
+        proto_minor: 1
+        url: http://localhost:8000/students
+        header:
+            Accept-Encoding: gzip
+            Content-Length: "109"
+            Content-Type: application/json
+            Host: localhost:8000
+            User-Agent: Go-http-client/1.1
+        body: '{"email": "Tp9@QH.M.ki.xN--Vuq861b", "name": "\ud876\udde5", "phone": 1000000001.0, "\u00ae\u009f\u00a0": []}'
+        body_type: ""
+        timestamp: 2024-03-19T16:56:09.001886478+05:30
+        host: ""
+    resp:
+        status_code: 201
+        header:
+            Connection: keep-alive
+            Content-Length: "32"
+            Content-Type: text/html; charset=utf-8
+            Date: Tue, 19 Mar 2024 11:26:09 GMT
+            Etag: W/"20-eRnsw5wzaHLQ7mrcxkJtVBiy7Xg"
+            Keep-Alive: timeout=5
+            X-Powered-By: Express
+        body: Student registration successful!
+        body_type: ""
+        status_message: ""
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-03-19T16:56:09.033609017+05:30
+    objects: []
+    assertions:
+        noise:
+            header.Date: []
+    created: 1710847569
+curl: |-
+    curl --request POST \
+      --url http://localhost:8000/students \
+      --header 'User-Agent: Go-http-client/1.1' \
+      --header 'Content-Type: application/json' \
+      --header 'Accept-Encoding: gzip' \
+      --header 'Host: localhost:8000' \
+      --data '{"email": "Tp9@QH.M.ki.xN--Vuq861b", "name": "\ud876\udde5", "phone": 1000000001.0, "\u00ae\u009f\u00a0": []}'

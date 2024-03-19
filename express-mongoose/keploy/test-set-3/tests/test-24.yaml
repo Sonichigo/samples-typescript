@@ -1,0 +1,49 @@
+version: api.keploy-enterprise.io/v1beta1
+kind: Http
+name: test-24
+spec:
+    metadata: {}
+    req:
+        method: POST
+        proto_major: 1
+        proto_minor: 1
+        url: http://localhost:8000/students
+        header:
+            Accept-Encoding: gzip
+            Content-Length: "137"
+            Content-Type: application/json
+            Host: localhost:8000
+            User-Agent: Go-http-client/1.1
+        body: '{"email": "fkNy96jhqpdp1!@I.A.Sn0U.seEk", "name": ":\t\uda1d\udd3c\"\u00b8\ud930\udd9f", "phone": 1000000000.0000001, "\u0098\u00f3": []}'
+        body_type: ""
+        timestamp: 2024-03-19T16:56:09.871397948+05:30
+        host: ""
+    resp:
+        status_code: 400
+        header:
+            Connection: keep-alive
+            Content-Length: "152"
+            Content-Type: text/html; charset=utf-8
+            Date: Tue, 19 Mar 2024 11:26:09 GMT
+            Etag: W/"98-pKZqFV9pVRVLE1RQSMIho5f+4yA"
+            Keep-Alive: timeout=5
+            X-Powered-By: Express
+        body: 'Failed to register Student as MongoServerError: E11000 duplicate key error collection: Students.students index: phone_1 dup key: { phone: 1000000000.0 }'
+        body_type: ""
+        status_message: ""
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-03-19T16:56:09.881969239+05:30
+    objects: []
+    assertions:
+        noise:
+            header.Date: []
+    created: 1710847569
+curl: |-
+    curl --request POST \
+      --url http://localhost:8000/students \
+      --header 'Content-Type: application/json' \
+      --header 'Accept-Encoding: gzip' \
+      --header 'Host: localhost:8000' \
+      --header 'User-Agent: Go-http-client/1.1' \
+      --data '{"email": "fkNy96jhqpdp1!@I.A.Sn0U.seEk", "name": ":\t\uda1d\udd3c\"\u00b8\ud930\udd9f", "phone": 1000000000.0000001, "\u0098\u00f3": []}'

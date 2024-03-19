@@ -1,0 +1,49 @@
+version: api.keploy-enterprise.io/v1beta1
+kind: Http
+name: test-6
+spec:
+    metadata: {}
+    req:
+        method: POST
+        proto_major: 1
+        proto_minor: 1
+        url: http://localhost:8000/students
+        header:
+            Accept-Encoding: gzip
+            Content-Length: "1393"
+            Content-Type: application/json
+            Host: localhost:8000
+            User-Agent: Go-http-client/1.1
+        body: '{"email": "Y#WzckY=qhNI@HvuzQFD.d.cOMPARE", "name": "\udbdd\udf85", "phone": 7398809444.852579, "B''\udb99\uddc39\u00b6\u00df\u0099\u00c0": [], "\u000e\u00abdp\u00b5\u0085\u00f4\u0001\u00db\u00b7\u00b3K": {"": {"": -1.1, "\ud9c6\udee56\u00b6\u001c\u00a06\udb86\uddeci": 1.8004653396192892e+16, ">\u00d8\u0099\ud8e9\ude66\uda50\udf59\u00ad`=": 27023}, "\udb64\ude61\ud93e\udc68\u0090W\u0012\bw\u00e5": "\udb38\ude70", "\u007f\udac6\ude11\u578f": false}, "\u00e8\u0084\u009d\u00e3\uda3c\udd9a_\u00eb\udb90\udf79\ud8a4\udde4\u0005\u00d5\udb52\udcea\u00c7": [{"\u0080\u00aa\u00fb": ["\u00fb\uda0f\uddcd"]}, -34559232, {"\u0087\u0086A": true}], "": {"\ud001": [], "\ud802\ude03\u0100": false, "0": null}, "\u9b01": [-54, ["\u0087\u00f8\u00ce.\u008du\udaf4\udeb6k1M&\u000bO\u0015]_\u00db\udade\udf46\ud888\udd42\u00fe\u00c3\u00cb\u00dd@\uda10\udd28", null, true], false], "\u0099\udbb1\udcd8\u00a2": {"\u00f5\udaf3\udfb0\u00fev\ud801\udfe1C": [{"": null, "\u0103\u00c70": true, "\u2301": []}], "": false, "8": true}, "+\u0092\u0092\u00ac\u0003\udb7c\udc4e\u00fc\u0018\u00c7\u6aedB\ud8c7\udc6bR": {"\u009a>\udba1\udc9d\u00ed\uda17\udd56X\u00cf\u009a\u00bc\u00b8": {"\u00a8\ud964\udd3f\u00a5": -0.5, "\u00c4\u0000\u00eb*b\u00d7\ud865\udd53\udb72\udeb0": ""}, "\u0095\udaf9\ude18r\u0014\u0089&": {}, "S\u00ac\u00f4\udba9\udd4b{\u0017\ud880\udefcU-\u00d0": {"\u00e4\u00a0\u0014\u00db\u0086\u00e7a": []}}}'
+        body_type: ""
+        timestamp: 2024-03-19T16:56:09.142146833+05:30
+        host: ""
+    resp:
+        status_code: 201
+        header:
+            Connection: keep-alive
+            Content-Length: "32"
+            Content-Type: text/html; charset=utf-8
+            Date: Tue, 19 Mar 2024 11:26:09 GMT
+            Etag: W/"20-eRnsw5wzaHLQ7mrcxkJtVBiy7Xg"
+            Keep-Alive: timeout=5
+            X-Powered-By: Express
+        body: Student registration successful!
+        body_type: ""
+        status_message: ""
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-03-19T16:56:09.155511491+05:30
+    objects: []
+    assertions:
+        noise:
+            header.Date: []
+    created: 1710847569
+curl: |-
+    curl --request POST \
+      --url http://localhost:8000/students \
+      --header 'User-Agent: Go-http-client/1.1' \
+      --header 'Content-Type: application/json' \
+      --header 'Accept-Encoding: gzip' \
+      --header 'Host: localhost:8000' \
+      --data '{"email": "Y#WzckY=qhNI@HvuzQFD.d.cOMPARE", "name": "\udbdd\udf85", "phone": 7398809444.852579, "B'\udb99\uddc39\u00b6\u00df\u0099\u00c0": [], "\u000e\u00abdp\u00b5\u0085\u00f4\u0001\u00db\u00b7\u00b3K": {"": {"": -1.1, "\ud9c6\udee56\u00b6\u001c\u00a06\udb86\uddeci": 1.8004653396192892e+16, ">\u00d8\u0099\ud8e9\ude66\uda50\udf59\u00ad`=": 27023}, "\udb64\ude61\ud93e\udc68\u0090W\u0012\bw\u00e5": "\udb38\ude70", "\u007f\udac6\ude11\u578f": false}, "\u00e8\u0084\u009d\u00e3\uda3c\udd9a_\u00eb\udb90\udf79\ud8a4\udde4\u0005\u00d5\udb52\udcea\u00c7": [{"\u0080\u00aa\u00fb": ["\u00fb\uda0f\uddcd"]}, -34559232, {"\u0087\u0086A": true}], "": {"\ud001": [], "\ud802\ude03\u0100": false, "0": null}, "\u9b01": [-54, ["\u0087\u00f8\u00ce.\u008du\udaf4\udeb6k1M&\u000bO\u0015]_\u00db\udade\udf46\ud888\udd42\u00fe\u00c3\u00cb\u00dd@\uda10\udd28", null, true], false], "\u0099\udbb1\udcd8\u00a2": {"\u00f5\udaf3\udfb0\u00fev\ud801\udfe1C": [{"": null, "\u0103\u00c70": true, "\u2301": []}], "": false, "8": true}, "+\u0092\u0092\u00ac\u0003\udb7c\udc4e\u00fc\u0018\u00c7\u6aedB\ud8c7\udc6bR": {"\u009a>\udba1\udc9d\u00ed\uda17\udd56X\u00cf\u009a\u00bc\u00b8": {"\u00a8\ud964\udd3f\u00a5": -0.5, "\u00c4\u0000\u00eb*b\u00d7\ud865\udd53\udb72\udeb0": ""}, "\u0095\udaf9\ude18r\u0014\u0089&": {}, "S\u00ac\u00f4\udba9\udd4b{\u0017\ud880\udefcU-\u00d0": {"\u00e4\u00a0\u0014\u00db\u0086\u00e7a": []}}}'

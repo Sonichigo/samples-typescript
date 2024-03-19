@@ -1,0 +1,49 @@
+version: api.keploy-enterprise.io/v1beta1
+kind: Http
+name: test-22
+spec:
+    metadata: {}
+    req:
+        method: POST
+        proto_major: 1
+        proto_minor: 1
+        url: http://localhost:8000/students
+        header:
+            Accept-Encoding: gzip
+            Content-Length: "546"
+            Content-Type: application/json
+            Host: localhost:8000
+            User-Agent: Go-http-client/1.1
+        body: '{"email": "=Oo@DfnIc.bET", "name": "\u00e5\u0094\u0007", "phone": 9999999998.0, "\u000e": ["\u00066\u00deu\u00ec\u00c9\udbb4\udc4d\u009f\u008e\u00fa\u0005\u0010\u00dd\u00b11", {"\u00ae": null, "\ud877\udc7aY\ud866\udf39\u00ec\uda6e\ude74\u000b\u008b\u00d2\ud82d\udca9\u00a3\ud965\udccc\uda7b\udff7\ud956\udfd6": null, "\u00f5\u00dc\u00aa\u00ba\ud9ae\ude4f\u009a\udb60\uddc7\u00f2": "9"}, -10000000.0], "\ud991\uddb9\u001c": [{}, null, {"\u0080z\udada\udd33Jb\u001a": -6243194783053258607}], "": {"\ud9e4\udc72\u00ac\u00d3\u00a3\ud9f6\ude75": []}}'
+        body_type: ""
+        timestamp: 2024-03-19T16:56:09.823494676+05:30
+        host: ""
+    resp:
+        status_code: 400
+        header:
+            Connection: keep-alive
+            Content-Length: "152"
+            Content-Type: text/html; charset=utf-8
+            Date: Tue, 19 Mar 2024 11:26:09 GMT
+            Etag: W/"98-suGYEvz+IjzcfGloi+AAxrZH3HA"
+            Keep-Alive: timeout=5
+            X-Powered-By: Express
+        body: 'Failed to register Student as MongoServerError: E11000 duplicate key error collection: Students.students index: phone_1 dup key: { phone: 9999999998.0 }'
+        body_type: ""
+        status_message: ""
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-03-19T16:56:09.832409837+05:30
+    objects: []
+    assertions:
+        noise:
+            header.Date: []
+    created: 1710847569
+curl: |-
+    curl --request POST \
+      --url http://localhost:8000/students \
+      --header 'Content-Type: application/json' \
+      --header 'Accept-Encoding: gzip' \
+      --header 'Host: localhost:8000' \
+      --header 'User-Agent: Go-http-client/1.1' \
+      --data '{"email": "=Oo@DfnIc.bET", "name": "\u00e5\u0094\u0007", "phone": 9999999998.0, "\u000e": ["\u00066\u00deu\u00ec\u00c9\udbb4\udc4d\u009f\u008e\u00fa\u0005\u0010\u00dd\u00b11", {"\u00ae": null, "\ud877\udc7aY\ud866\udf39\u00ec\uda6e\ude74\u000b\u008b\u00d2\ud82d\udca9\u00a3\ud965\udccc\uda7b\udff7\ud956\udfd6": null, "\u00f5\u00dc\u00aa\u00ba\ud9ae\ude4f\u009a\udb60\uddc7\u00f2": "9"}, -10000000.0], "\ud991\uddb9\u001c": [{}, null, {"\u0080z\udada\udd33Jb\u001a": -6243194783053258607}], "": {"\ud9e4\udc72\u00ac\u00d3\u00a3\ud9f6\ude75": []}}'

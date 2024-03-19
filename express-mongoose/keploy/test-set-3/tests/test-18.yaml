@@ -1,0 +1,49 @@
+version: api.keploy-enterprise.io/v1beta1
+kind: Http
+name: test-18
+spec:
+    metadata: {}
+    req:
+        method: POST
+        proto_major: 1
+        proto_minor: 1
+        url: http://localhost:8000/students
+        header:
+            Accept-Encoding: gzip
+            Content-Length: "3871"
+            Content-Type: application/json
+            Host: localhost:8000
+            User-Agent: Go-http-client/1.1
+        body: '{"email": "=U6EJ3Ej$zG@MHW8IhKtyXwW.Ev4CxlT2e.ke", "name": "\u0093\u0001:\u00aay\u0096", "phone": 1000000000.0000001, "O-#\u0007": [[null, 2214155793414838395, "8\ud8b7\udc9c\u00d5Q\u001a\ud968\udc78l\udb39\udf8a\u0094\ud8fc\udf22\u00db\u00f8\u00c8"], -10000000.0], "\u00c6(\u00d3\udbe5\ude27t\u00f5y": {"\u00bc\u009c\u00fak{\u00ab": {}, "\u008fo": [], "Q2u\u0004M4\udb44\udfbc\ud9e7\udc34l\u00b2\udb75\udcbd#": {"\u00a7<o\u00cf\u0094\udbf7\ude4e": 23730, "I\uda17\udfdf7d\u0001": "\u00b5\u0084(\ud8d3\udcb8", "\udb8c\udd1c\u001a\udb07\udc45": "\uda56\ude4a"}}, "\udae1\udc99\u00d6\u00cf\ud86f\udd70": {"\u00d6\r": false, "#\u00d3\u00e2\ud879\udc61\u00c7": "P\u0010n\u00c9\ud867\ude07D\u0090\u0734\udab8\udf69", "": 8829356205938690360}, "\\\udbb0\udd7eNs\u0084\u00b0": [[["", [[-2.2250738585072014e-308, true, true], {"^\uda20\udc4a\u00fe\uda22\udcb9": "\u0095\u0006\u00a9\u0660\u00fe", "": true}], []]]], "\u00e5\u00fe\u50f1": {"!": true}, "\u0000\udb7d\udd91": {"\u00e0\u0096\u008eS,<\u0000": [false], "\ud8ce\udd66": false, "\u00f9\u0005\u00a0\u00b6": [null]}, "z\u0094\udbe7\udea4\u00ff\u0014": [{"M\u0014\udaa6\udd8c\uda55\udebb`Ln+\u00f4\u00ab\u0096\udbad\ude4d\u00ee\ud904\ude3b\ud9a9\udedd\u00b5H": -2.220446049250313e-16, "\u00b7": "\u00c1\ud81c\ude3b6", "\u00cc\ud800\udfa5": -6327}, {"\udabf\ude3a": [-3185, null], "\u00d4\n": {"\u00fc\u009b \u00d1\udb52\udf7cE\u0085\ud887\udcd7Nr\b:\u00abi\udb5b\ude55\u2d6a\udb70\uddb3\u00ff\u00df\udbc4\udefb%7\uda25\ude4f\udab6\udc89+u\u00e4": [], "\u0004\u00cb\udbe6\udf7a\u0010L\udb6a\udf8e\u009bw\u00b6\u00bd": [null]}, "\u00c3": [[]]}, {"P[": -2.7504780889141572e-61, "\u00c9\udb36\udd14\u001f\u00be\u00a4\u00a7\u00e3\u009f": 16166}], "v\ud80c\udd49": [[]], "": {"Rf\udb4e\udecd\\\u001f\u00a1\u00bd\ud9e0\ude91\uda55\ude7a\ud8d8\udd27Uz\n''\u008a\udbc1\ude50\u00c7\u00c8\u008b\uda67\udfe5\u00d0\udbce\udc0b\u00a6\u009f\u00f4": [{"\udba0\udcf1\ud8c0\ude84\u00db": {"": -3.703492927536036e+16, "\ud91e\udd8b": false, "\udb48\uddb6\udb76\udf6e": null}, "\u00ff\u00ad\u00e1(\u009frq": {"\u00a5\u0014L": null, "L>\ud841\udce4>\\": -1566760761381392075, "6]e\u00da": null}, "l\ud882\udf26\u009aqs\u007f": -1.822772331983352e-247}, [22345, false]], "\u00f0B\u00b9\udb40\udce9\u00bb\u00bca\u00e4\u0080": [-1e-05], "\ud84d\udca4W\u0086/\u00cb": {"A\u0010\ud844\udc9d\ud9b9\udfdc": null, "P\ud877\udc2c\ud9bf\udf8e": true, "\u0095&\udad2\udea26\u0085\u008cU\ud878\udfadp\u0004\u00d2\ud91a\udf8bF\u0005\u00d8z\u00b6": null}}, "~\udb34\udf6c\u00d5\udae1\udd80\udad8\udccc=Y;\ud9b9\udfc0f\u0096\u001e\ud809\udd95\u007f\u00fd\uda2d\udd17": [{"\u00a9\u00bc\u00fa\u00f0\u0099\udaa7\udd93": 9007199254740992.0, "\u00dc\u008f\u00ea\ud9ee\uddadX\udbc9\uddc0\u0095\u00a1\u00c8(\u00ac=\u00caB\"": "`", "\u0096\uda63\udfae\u0002\u00a1T\u0092''": "\u0095R\u00ce\ud9b9\udf4f}"}, [], [-49680410, -3.8465761346928964e-241]], "\u00ef\ud987\udeaf\u0092r\ud98a\udd71": {"\ud9e6\udc10\u00d3\u00e9\u009f\u00f2(\u00ea\t\u00ff\uda32\udfaaq\u0091\u00e1\u0089\u00c5\u00ca": {}}, "\r": {}, "\ud8de\udf97\u00bf\u009a\ud830\ude06": {}, "\r\u00d0\ud9f1\udc11P\u00f9": [-127, null, null], "9i\u00ee+\u00d3\uda9c\udf21R\udb54\udeeb": [], "\u00da\ud982\udf99\udaf7\udd12%\u00c2": {"\uda08\udd60\uda91\udef6": null}, "\ud9f6\udeae\u0091\uda07\udd20": [], "\ud9c3\udfbe\u0017": [{}, []], "\udabb\udfc3=\u0088\uda02\udcd5\ud99a\udeae8\u00bef\u00ba\udbce\udd4e": [[[[], {"\u00b9\u00f1\u00a0(\u00cd\ud833\udc360\u001f\u00b3\u00ee=": false, "b9\ud956\udcef\u00d6\u00bf\uda00\udd3eMI": {"\u00ad": 439520221, "\u00f3.\t\u00aa": "\u0080\u00dc\u001f\u00da8{9\u00ba\u008d\u00ef\udb6f\ude94", "\u00a8)\u00c5\u00ffL\u0096[": "\ua962\"\u057e\u0000`\u0014\u00ee"}, "\u00e6\u00e1\udba5\ude6f": -1.1754943508222875e-38}], true, []], [37, [["\u00c5\u00fa\u00f3", null, null]], {"\u00bb\u0081": 0.3333333333333333}], {}], "J\ud8f0\udf4e\ud962\udd7e\u0000w\u00dc\ud81f\udf8fJ": []}'
+        body_type: ""
+        timestamp: 2024-03-19T16:56:09.630415449+05:30
+        host: ""
+    resp:
+        status_code: 400
+        header:
+            Connection: keep-alive
+            Content-Length: "152"
+            Content-Type: text/html; charset=utf-8
+            Date: Tue, 19 Mar 2024 11:26:09 GMT
+            Etag: W/"98-pKZqFV9pVRVLE1RQSMIho5f+4yA"
+            Keep-Alive: timeout=5
+            X-Powered-By: Express
+        body: 'Failed to register Student as MongoServerError: E11000 duplicate key error collection: Students.students index: phone_1 dup key: { phone: 1000000000.0 }'
+        body_type: ""
+        status_message: ""
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-03-19T16:56:09.639355275+05:30
+    objects: []
+    assertions:
+        noise:
+            header.Date: []
+    created: 1710847569
+curl: |-
+    curl --request POST \
+      --url http://localhost:8000/students \
+      --header 'User-Agent: Go-http-client/1.1' \
+      --header 'Content-Type: application/json' \
+      --header 'Accept-Encoding: gzip' \
+      --header 'Host: localhost:8000' \
+      --data '{"email": "=U6EJ3Ej$zG@MHW8IhKtyXwW.Ev4CxlT2e.ke", "name": "\u0093\u0001:\u00aay\u0096", "phone": 1000000000.0000001, "O-#\u0007": [[null, 2214155793414838395, "8\ud8b7\udc9c\u00d5Q\u001a\ud968\udc78l\udb39\udf8a\u0094\ud8fc\udf22\u00db\u00f8\u00c8"], -10000000.0], "\u00c6(\u00d3\udbe5\ude27t\u00f5y": {"\u00bc\u009c\u00fak{\u00ab": {}, "\u008fo": [], "Q2u\u0004M4\udb44\udfbc\ud9e7\udc34l\u00b2\udb75\udcbd#": {"\u00a7<o\u00cf\u0094\udbf7\ude4e": 23730, "I\uda17\udfdf7d\u0001": "\u00b5\u0084(\ud8d3\udcb8", "\udb8c\udd1c\u001a\udb07\udc45": "\uda56\ude4a"}}, "\udae1\udc99\u00d6\u00cf\ud86f\udd70": {"\u00d6\r": false, "#\u00d3\u00e2\ud879\udc61\u00c7": "P\u0010n\u00c9\ud867\ude07D\u0090\u0734\udab8\udf69", "": 8829356205938690360}, "\\\udbb0\udd7eNs\u0084\u00b0": [[["", [[-2.2250738585072014e-308, true, true], {"^\uda20\udc4a\u00fe\uda22\udcb9": "\u0095\u0006\u00a9\u0660\u00fe", "": true}], []]]], "\u00e5\u00fe\u50f1": {"!": true}, "\u0000\udb7d\udd91": {"\u00e0\u0096\u008eS,<\u0000": [false], "\ud8ce\udd66": false, "\u00f9\u0005\u00a0\u00b6": [null]}, "z\u0094\udbe7\udea4\u00ff\u0014": [{"M\u0014\udaa6\udd8c\uda55\udebb`Ln+\u00f4\u00ab\u0096\udbad\ude4d\u00ee\ud904\ude3b\ud9a9\udedd\u00b5H": -2.220446049250313e-16, "\u00b7": "\u00c1\ud81c\ude3b6", "\u00cc\ud800\udfa5": -6327}, {"\udabf\ude3a": [-3185, null], "\u00d4\n": {"\u00fc\u009b \u00d1\udb52\udf7cE\u0085\ud887\udcd7Nr\b:\u00abi\udb5b\ude55\u2d6a\udb70\uddb3\u00ff\u00df\udbc4\udefb%7\uda25\ude4f\udab6\udc89+u\u00e4": [], "\u0004\u00cb\udbe6\udf7a\u0010L\udb6a\udf8e\u009bw\u00b6\u00bd": [null]}, "\u00c3": [[]]}, {"P[": -2.7504780889141572e-61, "\u00c9\udb36\udd14\u001f\u00be\u00a4\u00a7\u00e3\u009f": 16166}], "v\ud80c\udd49": [[]], "": {"Rf\udb4e\udecd\\\u001f\u00a1\u00bd\ud9e0\ude91\uda55\ude7a\ud8d8\udd27Uz\n'\u008a\udbc1\ude50\u00c7\u00c8\u008b\uda67\udfe5\u00d0\udbce\udc0b\u00a6\u009f\u00f4": [{"\udba0\udcf1\ud8c0\ude84\u00db": {"": -3.703492927536036e+16, "\ud91e\udd8b": false, "\udb48\uddb6\udb76\udf6e": null}, "\u00ff\u00ad\u00e1(\u009frq": {"\u00a5\u0014L": null, "L>\ud841\udce4>\\": -1566760761381392075, "6]e\u00da": null}, "l\ud882\udf26\u009aqs\u007f": -1.822772331983352e-247}, [22345, false]], "\u00f0B\u00b9\udb40\udce9\u00bb\u00bca\u00e4\u0080": [-1e-05], "\ud84d\udca4W\u0086/\u00cb": {"A\u0010\ud844\udc9d\ud9b9\udfdc": null, "P\ud877\udc2c\ud9bf\udf8e": true, "\u0095&\udad2\udea26\u0085\u008cU\ud878\udfadp\u0004\u00d2\ud91a\udf8bF\u0005\u00d8z\u00b6": null}}, "~\udb34\udf6c\u00d5\udae1\udd80\udad8\udccc=Y;\ud9b9\udfc0f\u0096\u001e\ud809\udd95\u007f\u00fd\uda2d\udd17": [{"\u00a9\u00bc\u00fa\u00f0\u0099\udaa7\udd93": 9007199254740992.0, "\u00dc\u008f\u00ea\ud9ee\uddadX\udbc9\uddc0\u0095\u00a1\u00c8(\u00ac=\u00caB\"": "`", "\u0096\uda63\udfae\u0002\u00a1T\u0092'": "\u0095R\u00ce\ud9b9\udf4f}"}, [], [-49680410, -3.8465761346928964e-241]], "\u00ef\ud987\udeaf\u0092r\ud98a\udd71": {"\ud9e6\udc10\u00d3\u00e9\u009f\u00f2(\u00ea\t\u00ff\uda32\udfaaq\u0091\u00e1\u0089\u00c5\u00ca": {}}, "\r": {}, "\ud8de\udf97\u00bf\u009a\ud830\ude06": {}, "\r\u00d0\ud9f1\udc11P\u00f9": [-127, null, null], "9i\u00ee+\u00d3\uda9c\udf21R\udb54\udeeb": [], "\u00da\ud982\udf99\udaf7\udd12%\u00c2": {"\uda08\udd60\uda91\udef6": null}, "\ud9f6\udeae\u0091\uda07\udd20": [], "\ud9c3\udfbe\u0017": [{}, []], "\udabb\udfc3=\u0088\uda02\udcd5\ud99a\udeae8\u00bef\u00ba\udbce\udd4e": [[[[], {"\u00b9\u00f1\u00a0(\u00cd\ud833\udc360\u001f\u00b3\u00ee=": false, "b9\ud956\udcef\u00d6\u00bf\uda00\udd3eMI": {"\u00ad": 439520221, "\u00f3.\t\u00aa": "\u0080\u00dc\u001f\u00da8{9\u00ba\u008d\u00ef\udb6f\ude94", "\u00a8)\u00c5\u00ffL\u0096[": "\ua962\"\u057e\u0000`\u0014\u00ee"}, "\u00e6\u00e1\udba5\ude6f": -1.1754943508222875e-38}], true, []], [37, [["\u00c5\u00fa\u00f3", null, null]], {"\u00bb\u0081": 0.3333333333333333}], {}], "J\ud8f0\udf4e\ud962\udd7e\u0000w\u00dc\ud81f\udf8fJ": []}'

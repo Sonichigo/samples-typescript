@@ -1,0 +1,49 @@
+version: api.keploy-enterprise.io/v1beta1
+kind: Http
+name: test-17
+spec:
+    metadata: {}
+    req:
+        method: POST
+        proto_major: 1
+        proto_minor: 1
+        url: http://localhost:8000/students
+        header:
+            Accept-Encoding: gzip
+            Content-Length: "1143"
+            Content-Type: application/json
+            Host: localhost:8000
+            User-Agent: Go-http-client/1.1
+        body: '{"email": "gA@h.U.n.MAK7.JOB.S7hSOpySJoUhqI.g.CItADEL", "name": "\u0097o\u000f~", "phone": 9999999999.0, "v+\ud8ba\udda5\u0011": [], "": {"\u00f6\u00ca\u00c6\u0006K\ud90c\udf5a\u0087\ueb44\u00a9z\u00c2\u00a4\u0007": [[-60]], "K}\u00feI": false}, "\u0013": {}, "\uda76\udf58\u000e\u00d1": [[], {"{\u00d5y\u00c2;L[": [726250014, [[]]], "\u00e4\u0094\u00d9\udab1\udf23(\u00d1\u009c\u00a6y\u00f1\u00db\udb8c\ude0f": {}, "": [-0.5, null, ""]}], "\bQ": {"`\ud8ab\udd2d\udbaa\ude97\u00a6aO\u00f3\u00d0\u00de\ud80a\udfa5": {}, "\u00bby": {"\u00f1\u00e3": []}, "{": []}, "[": [{"\u00a8z\u00c1\u00db=": {}}], "\u0011l": {" \u0004[D\u00bc\u0099": {"\u00da>L\u00ca": [], "\u0089 ": {"\u00b2\u001b\u0019N\ud9ee\udd9b\u0098\ud832\udc94": null, "\u0098\u00a4wi\u00cd\u00c2": 63, "\nD\u00c0\u0081ha\u00fe\udb80\udea5\u00c4\ud803\udead\ud962\udf89\u1ea6\u00c2n\ud9ad\udcf3\u00c2C": "\u0015\u00c1\u00b2"}, "\u000f\u00bf\udb8f\uddee\u00dc": -0.99999}, "": {"\u00b6\u0099\u00e7": false}, "\u0014+\ud02b": [[true, "", 1.9], 3413, false]}, "\t\u00df\u0091)\u00ed\u00cc\u00e8": [{"w\u0016\u00b0": [-1.175494351e-38, 9.01305343020762e+134, -5.420874414327305e-186]}]}'
+        body_type: ""
+        timestamp: 2024-03-19T16:56:09.541123721+05:30
+        host: ""
+    resp:
+        status_code: 400
+        header:
+            Connection: keep-alive
+            Content-Length: "152"
+            Content-Type: text/html; charset=utf-8
+            Date: Tue, 19 Mar 2024 11:26:09 GMT
+            Etag: W/"98-3rwmh5QrXi1rbgEAOVh9JVEnQcs"
+            Keep-Alive: timeout=5
+            X-Powered-By: Express
+        body: 'Failed to register Student as MongoServerError: E11000 duplicate key error collection: Students.students index: phone_1 dup key: { phone: 9999999999.0 }'
+        body_type: ""
+        status_message: ""
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-03-19T16:56:09.552876206+05:30
+    objects: []
+    assertions:
+        noise:
+            header.Date: []
+    created: 1710847569
+curl: |-
+    curl --request POST \
+      --url http://localhost:8000/students \
+      --header 'Content-Type: application/json' \
+      --header 'Accept-Encoding: gzip' \
+      --header 'Host: localhost:8000' \
+      --header 'User-Agent: Go-http-client/1.1' \
+      --data '{"email": "gA@h.U.n.MAK7.JOB.S7hSOpySJoUhqI.g.CItADEL", "name": "\u0097o\u000f~", "phone": 9999999999.0, "v+\ud8ba\udda5\u0011": [], "": {"\u00f6\u00ca\u00c6\u0006K\ud90c\udf5a\u0087\ueb44\u00a9z\u00c2\u00a4\u0007": [[-60]], "K}\u00feI": false}, "\u0013": {}, "\uda76\udf58\u000e\u00d1": [[], {"{\u00d5y\u00c2;L[": [726250014, [[]]], "\u00e4\u0094\u00d9\udab1\udf23(\u00d1\u009c\u00a6y\u00f1\u00db\udb8c\ude0f": {}, "": [-0.5, null, ""]}], "\bQ": {"`\ud8ab\udd2d\udbaa\ude97\u00a6aO\u00f3\u00d0\u00de\ud80a\udfa5": {}, "\u00bby": {"\u00f1\u00e3": []}, "{": []}, "[": [{"\u00a8z\u00c1\u00db=": {}}], "\u0011l": {" \u0004[D\u00bc\u0099": {"\u00da>L\u00ca": [], "\u0089 ": {"\u00b2\u001b\u0019N\ud9ee\udd9b\u0098\ud832\udc94": null, "\u0098\u00a4wi\u00cd\u00c2": 63, "\nD\u00c0\u0081ha\u00fe\udb80\udea5\u00c4\ud803\udead\ud962\udf89\u1ea6\u00c2n\ud9ad\udcf3\u00c2C": "\u0015\u00c1\u00b2"}, "\u000f\u00bf\udb8f\uddee\u00dc": -0.99999}, "": {"\u00b6\u0099\u00e7": false}, "\u0014+\ud02b": [[true, "", 1.9], 3413, false]}, "\t\u00df\u0091)\u00ed\u00cc\u00e8": [{"w\u0016\u00b0": [-1.175494351e-38, 9.01305343020762e+134, -5.420874414327305e-186]}]}'

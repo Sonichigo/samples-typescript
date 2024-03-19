@@ -1,0 +1,49 @@
+version: api.keploy-enterprise.io/v1beta1
+kind: Http
+name: test-14
+spec:
+    metadata: {}
+    req:
+        method: POST
+        proto_major: 1
+        proto_minor: 1
+        url: http://localhost:8000/students
+        header:
+            Accept-Encoding: gzip
+            Content-Length: "1851"
+            Content-Type: application/json
+            Host: localhost:8000
+            User-Agent: Go-http-client/1.1
+        body: '{"email": "K''J9Hh9T''2@R.LXxYJgGGYPxnJAV0n8kd8i.Xn--MGbc0a9azCg", "name": "m\u0000[", "phone": 1776893181.7204905, "": [[-1.5, "\u009c=\u008c\u00c8\u00e0D", "\u00f0U\u00ac\ud9ee\udd18\u00e28\u0002Su\ud81a\udcba\udbb7\udc9b\u00ab\u00de\u00d3\u00ac\u00b4\u0088\u000ex\u00dd_5\ud8bc\udea1."], {}], "M)\u0085\b\u00ad.": {"\u009c\u0092dD\ud897\udc13:": [[null], {"\n\ud984\udc0d\ud9e2\udc21<\ud9e4\udc39\u0011\u009bCi": 9007199254740992.0, "\u00ec\uda16\udfce\u0087\u00a9\u00aa\u00f1\u008e": null}, 124], "\ud86e\ude94\u00ed\ud9e8\udca5": [[null]]}, "\ud895\udd79\u00c6\u00b1\udb28\udce8\u0094\u00ff": {}, "\u00e0\u00fd\u00fdq\u0090": {"}`\u00be\u00d6": {"\u00da": {}, "": [], "\u00b8L7\u00ae\u000e\u00cb": {}}, "b": {"\u00f4": [], "\u0090Op\u00b8Q\udaa2\udd13\u00dd": [6790593745496132319, 0.0], "s\u009e\ud959\udc3b\ud90c\udf95|\u00bdb": {"\u00f4": null, "\"\u00cb\u0092": "\ud93f\udf9c\u00cb\u009a o", "+\uda6d\ude86\ud804\udc29": "\u00af\u007f\u00cf\ud969\udf6e"}}, "\ud83f\udef7": {"\u0085\u00dd\u00a0\u00e1\udad4\udd67&\u00a8\ud868\uddd4\uda1c\udd50": {"\u008c\u0088{\u00f9$\u00b5\u0092\u00a3Y": "\u00e0L", "": {}}, "": ["\u00b1\ud9ae\udeeb\ud8ea\uded00\u00a7"], "P\u008d\ud90d\udd22\ud86f\udc9by\u009b$q]<_\u007f": [[null, 10463, -619430030], {"\u00a8ur\ud82b\udc92h": -24129, "\u00b4\u0099\u000f\uda16\udcfe": false}, []]}}, "\u0002\u008a\u00aa1\u0097\u00cf\udabd\udcc0\u0089A>4\u00d86\ud889\udee0\u0010\u00f3\u00a4": {}, "\u00b4\u0084\ud9f1\uddbdr\uda3f\udd58\u000f\u00f8_\u00b4\u00fd\udaa6\udf89A\u0081u\r": {"\u008a\u00a9\u00a7\b\u0010\u00bb": 8706}, "\udbab\udca8\u0000\u0082": [], "\u00e1\udbfe\udfcf": [], "\u00ce\u00da\u009d\u00b6\u00de\u00b5\u0091\u00e6": [], "\u00f3\ud8d4\udde4|\u0094\\d\u00d1\u0016": {}, "\ud958\ude02\u0015": [null], "\u008b": [{"\udacf\uded4\ud84b\ude46E\u0096\u0093b\u00c1''j\u00d4M": null}, 1.401298464324817e-45, {}]}'
+        body_type: ""
+        timestamp: 2024-03-19T16:56:09.392898452+05:30
+        host: ""
+    resp:
+        status_code: 201
+        header:
+            Connection: keep-alive
+            Content-Length: "32"
+            Content-Type: text/html; charset=utf-8
+            Date: Tue, 19 Mar 2024 11:26:09 GMT
+            Etag: W/"20-eRnsw5wzaHLQ7mrcxkJtVBiy7Xg"
+            Keep-Alive: timeout=5
+            X-Powered-By: Express
+        body: Student registration successful!
+        body_type: ""
+        status_message: ""
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-03-19T16:56:09.402757068+05:30
+    objects: []
+    assertions:
+        noise:
+            header.Date: []
+    created: 1710847569
+curl: |-
+    curl --request POST \
+      --url http://localhost:8000/students \
+      --header 'Accept-Encoding: gzip' \
+      --header 'Host: localhost:8000' \
+      --header 'User-Agent: Go-http-client/1.1' \
+      --header 'Content-Type: application/json' \
+      --data '{"email": "K'J9Hh9T'2@R.LXxYJgGGYPxnJAV0n8kd8i.Xn--MGbc0a9azCg", "name": "m\u0000[", "phone": 1776893181.7204905, "": [[-1.5, "\u009c=\u008c\u00c8\u00e0D", "\u00f0U\u00ac\ud9ee\udd18\u00e28\u0002Su\ud81a\udcba\udbb7\udc9b\u00ab\u00de\u00d3\u00ac\u00b4\u0088\u000ex\u00dd_5\ud8bc\udea1."], {}], "M)\u0085\b\u00ad.": {"\u009c\u0092dD\ud897\udc13:": [[null], {"\n\ud984\udc0d\ud9e2\udc21<\ud9e4\udc39\u0011\u009bCi": 9007199254740992.0, "\u00ec\uda16\udfce\u0087\u00a9\u00aa\u00f1\u008e": null}, 124], "\ud86e\ude94\u00ed\ud9e8\udca5": [[null]]}, "\ud895\udd79\u00c6\u00b1\udb28\udce8\u0094\u00ff": {}, "\u00e0\u00fd\u00fdq\u0090": {"}`\u00be\u00d6": {"\u00da": {}, "": [], "\u00b8L7\u00ae\u000e\u00cb": {}}, "b": {"\u00f4": [], "\u0090Op\u00b8Q\udaa2\udd13\u00dd": [6790593745496132319, 0.0], "s\u009e\ud959\udc3b\ud90c\udf95|\u00bdb": {"\u00f4": null, "\"\u00cb\u0092": "\ud93f\udf9c\u00cb\u009a o", "+\uda6d\ude86\ud804\udc29": "\u00af\u007f\u00cf\ud969\udf6e"}}, "\ud83f\udef7": {"\u0085\u00dd\u00a0\u00e1\udad4\udd67&\u00a8\ud868\uddd4\uda1c\udd50": {"\u008c\u0088{\u00f9$\u00b5\u0092\u00a3Y": "\u00e0L", "": {}}, "": ["\u00b1\ud9ae\udeeb\ud8ea\uded00\u00a7"], "P\u008d\ud90d\udd22\ud86f\udc9by\u009b$q]<_\u007f": [[null, 10463, -619430030], {"\u00a8ur\ud82b\udc92h": -24129, "\u00b4\u0099\u000f\uda16\udcfe": false}, []]}}, "\u0002\u008a\u00aa1\u0097\u00cf\udabd\udcc0\u0089A>4\u00d86\ud889\udee0\u0010\u00f3\u00a4": {}, "\u00b4\u0084\ud9f1\uddbdr\uda3f\udd58\u000f\u00f8_\u00b4\u00fd\udaa6\udf89A\u0081u\r": {"\u008a\u00a9\u00a7\b\u0010\u00bb": 8706}, "\udbab\udca8\u0000\u0082": [], "\u00e1\udbfe\udfcf": [], "\u00ce\u00da\u009d\u00b6\u00de\u00b5\u0091\u00e6": [], "\u00f3\ud8d4\udde4|\u0094\\d\u00d1\u0016": {}, "\ud958\ude02\u0015": [null], "\u008b": [{"\udacf\uded4\ud84b\ude46E\u0096\u0093b\u00c1'j\u00d4M": null}, 1.401298464324817e-45, {}]}'

@@ -1,0 +1,49 @@
+version: api.keploy-enterprise.io/v1beta1
+kind: Http
+name: test-4
+spec:
+    metadata: {}
+    req:
+        method: POST
+        proto_major: 1
+        proto_minor: 1
+        url: http://localhost:8000/students
+        header:
+            Accept-Encoding: gzip
+            Content-Length: "404"
+            Content-Type: application/json
+            Host: localhost:8000
+            User-Agent: Go-http-client/1.1
+        body: '{"email": "&4M&2P5r@u.EmAIL", "name": "}\ud850\udd4f\u00c2", "phone": 9999999998.0, "\u0098\u00f9": [null, "", null], "\u0093\u00f6\u00b8#4\u00e8\uda40\udcf7\u00d5;\u009e": {"\u00e7\udb95\udf2a8B\u6231": true, "BS\u009d\ud949\ude24\u6f63\u00b0": false}, "": "\u00b1\u00b3_\ud93c\uded8@[\ud87f\udfa7\u00f5\udbdb\ude33\u0003", "\u00ae": {"\u0091\u00af\u00d8\u009d\u001e": [], "\u00aa": null}, "$": [false]}'
+        body_type: ""
+        timestamp: 2024-03-19T16:56:09.072602003+05:30
+        host: ""
+    resp:
+        status_code: 201
+        header:
+            Connection: keep-alive
+            Content-Length: "32"
+            Content-Type: text/html; charset=utf-8
+            Date: Tue, 19 Mar 2024 11:26:09 GMT
+            Etag: W/"20-eRnsw5wzaHLQ7mrcxkJtVBiy7Xg"
+            Keep-Alive: timeout=5
+            X-Powered-By: Express
+        body: Student registration successful!
+        body_type: ""
+        status_message: ""
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-03-19T16:56:09.084947293+05:30
+    objects: []
+    assertions:
+        noise:
+            header.Date: []
+    created: 1710847569
+curl: |-
+    curl --request POST \
+      --url http://localhost:8000/students \
+      --header 'Content-Type: application/json' \
+      --header 'Accept-Encoding: gzip' \
+      --header 'Host: localhost:8000' \
+      --header 'User-Agent: Go-http-client/1.1' \
+      --data '{"email": "&4M&2P5r@u.EmAIL", "name": "}\ud850\udd4f\u00c2", "phone": 9999999998.0, "\u0098\u00f9": [null, "", null], "\u0093\u00f6\u00b8#4\u00e8\uda40\udcf7\u00d5;\u009e": {"\u00e7\udb95\udf2a8B\u6231": true, "BS\u009d\ud949\ude24\u6f63\u00b0": false}, "": "\u00b1\u00b3_\ud93c\uded8@[\ud87f\udfa7\u00f5\udbdb\ude33\u0003", "\u00ae": {"\u0091\u00af\u00d8\u009d\u001e": [], "\u00aa": null}, "$": [false]}'

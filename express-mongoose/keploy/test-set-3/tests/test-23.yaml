@@ -1,0 +1,49 @@
+version: api.keploy-enterprise.io/v1beta1
+kind: Http
+name: test-23
+spec:
+    metadata: {}
+    req:
+        method: POST
+        proto_major: 1
+        proto_minor: 1
+        url: http://localhost:8000/students
+        header:
+            Accept-Encoding: gzip
+            Content-Length: "611"
+            Content-Type: application/json
+            Host: localhost:8000
+            User-Agent: Go-http-client/1.1
+        body: '{"email": "F@DI.e.f.vOTIng", "name": "\u0088;\ud94b\udc8c\u00f7", "phone": 9999999999.0, "": [], "\u0096\udad8\udd73\u008b\ud8d4\udd8c\u0012\u00e0\udbc4\udd4c1\u0000t\u00b8\u009c\u00e4\udbd7\udc8b\u00a9\u00c9\ud87f\udf44\u00fc\ud885\udf63\u00a8\u0099\udb55\ude9a": [[{"\u009c\ud813\udd43z\udb11\ude2b\u00ef\u00e6k\u00b6*\u0099": -29564}], [-25551, false], {}], "\udafb\udd31f\u0000\ud916\ude9a\u00f8\u00cb\u00e2\u00bb\ud236\u00d7\u0013}\u00b0\u00d0\ud881\ude99\u00be\udbb7\udf11\n\uda29\udcf7": [[], [{}], []], "\ud82b\udd8f\u000eUkI\u00a9\u00da\ud96c\udd1b\u00e4AN\u0016\udae0\udf89\u009f": null, "\u00b6": []}'
+        body_type: ""
+        timestamp: 2024-03-19T16:56:09.847831357+05:30
+        host: ""
+    resp:
+        status_code: 400
+        header:
+            Connection: keep-alive
+            Content-Length: "152"
+            Content-Type: text/html; charset=utf-8
+            Date: Tue, 19 Mar 2024 11:26:09 GMT
+            Etag: W/"98-3rwmh5QrXi1rbgEAOVh9JVEnQcs"
+            Keep-Alive: timeout=5
+            X-Powered-By: Express
+        body: 'Failed to register Student as MongoServerError: E11000 duplicate key error collection: Students.students index: phone_1 dup key: { phone: 9999999999.0 }'
+        body_type: ""
+        status_message: ""
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-03-19T16:56:09.860754994+05:30
+    objects: []
+    assertions:
+        noise:
+            header.Date: []
+    created: 1710847569
+curl: |-
+    curl --request POST \
+      --url http://localhost:8000/students \
+      --header 'Content-Type: application/json' \
+      --header 'Accept-Encoding: gzip' \
+      --header 'Host: localhost:8000' \
+      --header 'User-Agent: Go-http-client/1.1' \
+      --data '{"email": "F@DI.e.f.vOTIng", "name": "\u0088;\ud94b\udc8c\u00f7", "phone": 9999999999.0, "": [], "\u0096\udad8\udd73\u008b\ud8d4\udd8c\u0012\u00e0\udbc4\udd4c1\u0000t\u00b8\u009c\u00e4\udbd7\udc8b\u00a9\u00c9\ud87f\udf44\u00fc\ud885\udf63\u00a8\u0099\udb55\ude9a": [[{"\u009c\ud813\udd43z\udb11\ude2b\u00ef\u00e6k\u00b6*\u0099": -29564}], [-25551, false], {}], "\udafb\udd31f\u0000\ud916\ude9a\u00f8\u00cb\u00e2\u00bb\ud236\u00d7\u0013}\u00b0\u00d0\ud881\ude99\u00be\udbb7\udf11\n\uda29\udcf7": [[], [{}], []], "\ud82b\udd8f\u000eUkI\u00a9\u00da\ud96c\udd1b\u00e4AN\u0016\udae0\udf89\u009f": null, "\u00b6": []}'

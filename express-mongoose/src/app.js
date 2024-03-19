@@ -1,7 +1,8 @@
 const express = require('express');
 require('./db/connection');
-const Student = require('./models/students');
+const student = require('./models/students');
 const router = require('./routes/routes');
+require('keploy-deduplicate-tests/dist/integrations/express/register')
 
 const app = express();
 

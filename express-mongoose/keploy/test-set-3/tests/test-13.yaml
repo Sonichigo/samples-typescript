@@ -1,0 +1,49 @@
+version: api.keploy-enterprise.io/v1beta1
+kind: Http
+name: test-13
+spec:
+    metadata: {}
+    req:
+        method: POST
+        proto_major: 1
+        proto_minor: 1
+        url: http://localhost:8000/students
+        header:
+            Accept-Encoding: gzip
+            Content-Length: "2527"
+            Content-Type: application/json
+            Host: localhost:8000
+            User-Agent: Go-http-client/1.1
+        body: '{"email": "c^sn@i.Ue.p.UBi.cadpWZ.y4Ov51-uE.hk", "name": "\u00be$", "phone": 1000000000.0000001, "\u00ae\u00fd\u00c3\r\u00de\u00c8%\u00d8\u00a8\u0089\u001f": {"\u00fa\ud939\ude902 K\u0017\u00d5\u00de\u00f6\u00b8B\u00b1\u00d8": [null, null], "\u0006\u001f\u00d1t\u001a5\uda7c\udd53\u00c6d\u0096\ud8d4\udf52\udb0d\udfd8)\u00a0": [null], "": true}, "\udbf8\ude1b!u\u00cd": {"\u00f4": null, "\u00fb\udb33\udc1dy9\u0081h\udaf6\uddd2!": {"": 119}, "\udb35\udfc8\udbe0\udfd2\u0095\ud9bb\udeef\u00df\u0096\u00c7z\u00d5\u00ba\u0010\u00e8": [null, 2.2250738585e-313, 3.698294822228136e+16]}, "\u00cd\u009f": {"\u00acGU\u00aa\u00d6{": [null], "%\u00bf\ud91b\udfd8\u0016#\u00f1dE\u007f\udb25\udebb": {"\u00a3n~\u00bd\u00e4P@": null, "": -0.99999, "\u00ee\u0003": false}, "\u00ab": "\ud80a\udf3b\u00d4\ud99c\udd04"}, "\u00d4E\u00ab.\udbae\ude2f": [{"\u00c2": null}, [false, "\u00b4\u00fa4\uda07\udf18\u00f4\u00fe\u00c5", -1.401298464324817e-45], {"X_\u00a4\ud837\udc18\u00a2": -1.1754943508222875e-38, "}\u00b6h\u0082\u00d4\u00c9": false}], "tC\u00de\u00ee": {"J]\ud808\udca7\u00fd\u009bx": null, "l": null, "\u0087\u00c0\u00a6\u00bcy": "3\udaf3\ude4a\u00fe\u00e3\ud98a\udde5\u00b6\u0085\n"}, "": {}, "\u00c9\u0012": [-1.7976931348623157e+308], "''": {"n\ud90b\udcde\udb7b\udfdd": {}, "XS\ud8a6\ude31>\u0085\u00af\ud811\ude3e\u008c\u00c2\u001c~\udad9\udcd878f": {"\u001d": [[0.0, -3278, true], {"\u00d7\u00e1\u0017\ub5f4": null}, [true, true]], "I\uda2e\udd1c\u0094\u00d3S/\u00fa \udae5\udecf": [{}, {"\u00fd.": -14440, "\udbf4\uddbf\u0016\nB\u00ef": "", "\u00fd3(\u00c1I": "h\u00cd\u00ef"}, {}], "": []}, "C": {"": [{"\ud9ac\uded7\u0001\ud8d2\udda8\u00ea\u00de\u008f\u0017": null, "\u00ce\u00ae\u0083\uda88\udcbb": "\u0004\udb60\ude8f\u0085", "\u00ec\u0085": 4.2590606585499883e-299}]}}, "\u00a9\u0006\u0002q\u00e7\ud816\udfb9%\u0013\ud82f\udfaf!\u0010": [{"\u00ed\u0087\u00f9\ud91f\udd44\u00e0\ud972\udf59\udb35\uded7N": null, "": "\u00b1"}, {"": [], "\udbe9\udf0e\u0018\u00b8\u00c2\u609b\udbaa\uddbd\u00a1\u0001\u00fe\ud866\udec7\u00ba\u00c2\udb89\ude72\ud940\udd14\u00e8I\u000e\u001f": null, "\u00bb\f\u0001\u00a4": {"u\u00ab\ud89a\udcabw\u00d9\u00b2": -23692, "\uda7d\udd72:": -1.7976931348623157e+308, "\u0013": "}\b\u00bd\u0095"}}], "8": [[{}, [], {"F": "\rc\uda92\udea9\u009e\u001b\ud9a0\ude9dX\ud9a0\udebd\u00b6\u0095M+\u0012\u0004\u00e2\u00e1\u0094\u00d4\u00f4\u00d6\u00f5\u0006\u00ee", "\u00b9\ud936\udfb3\uc550\ud9bf\uddfd": 11500, "\udad6\udc76\u00ce\ud804\ude2f\u008c\u0099\uda16\ude5f\u00a9.q\u00cf\u0019\u00cd": "w\u00d3"}]]}'
+        body_type: ""
+        timestamp: 2024-03-19T16:56:09.336827067+05:30
+        host: ""
+    resp:
+        status_code: 201
+        header:
+            Connection: keep-alive
+            Content-Length: "32"
+            Content-Type: text/html; charset=utf-8
+            Date: Tue, 19 Mar 2024 11:26:09 GMT
+            Etag: W/"20-eRnsw5wzaHLQ7mrcxkJtVBiy7Xg"
+            Keep-Alive: timeout=5
+            X-Powered-By: Express
+        body: Student registration successful!
+        body_type: ""
+        status_message: ""
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-03-19T16:56:09.346554939+05:30
+    objects: []
+    assertions:
+        noise:
+            header.Date: []
+    created: 1710847569
+curl: |-
+    curl --request POST \
+      --url http://localhost:8000/students \
+      --header 'Accept-Encoding: gzip' \
+      --header 'Host: localhost:8000' \
+      --header 'User-Agent: Go-http-client/1.1' \
+      --header 'Content-Type: application/json' \
+      --data '{"email": "c^sn@i.Ue.p.UBi.cadpWZ.y4Ov51-uE.hk", "name": "\u00be$", "phone": 1000000000.0000001, "\u00ae\u00fd\u00c3\r\u00de\u00c8%\u00d8\u00a8\u0089\u001f": {"\u00fa\ud939\ude902 K\u0017\u00d5\u00de\u00f6\u00b8B\u00b1\u00d8": [null, null], "\u0006\u001f\u00d1t\u001a5\uda7c\udd53\u00c6d\u0096\ud8d4\udf52\udb0d\udfd8)\u00a0": [null], "": true}, "\udbf8\ude1b!u\u00cd": {"\u00f4": null, "\u00fb\udb33\udc1dy9\u0081h\udaf6\uddd2!": {"": 119}, "\udb35\udfc8\udbe0\udfd2\u0095\ud9bb\udeef\u00df\u0096\u00c7z\u00d5\u00ba\u0010\u00e8": [null, 2.2250738585e-313, 3.698294822228136e+16]}, "\u00cd\u009f": {"\u00acGU\u00aa\u00d6{": [null], "%\u00bf\ud91b\udfd8\u0016#\u00f1dE\u007f\udb25\udebb": {"\u00a3n~\u00bd\u00e4P@": null, "": -0.99999, "\u00ee\u0003": false}, "\u00ab": "\ud80a\udf3b\u00d4\ud99c\udd04"}, "\u00d4E\u00ab.\udbae\ude2f": [{"\u00c2": null}, [false, "\u00b4\u00fa4\uda07\udf18\u00f4\u00fe\u00c5", -1.401298464324817e-45], {"X_\u00a4\ud837\udc18\u00a2": -1.1754943508222875e-38, "}\u00b6h\u0082\u00d4\u00c9": false}], "tC\u00de\u00ee": {"J]\ud808\udca7\u00fd\u009bx": null, "l": null, "\u0087\u00c0\u00a6\u00bcy": "3\udaf3\ude4a\u00fe\u00e3\ud98a\udde5\u00b6\u0085\n"}, "": {}, "\u00c9\u0012": [-1.7976931348623157e+308], "'": {"n\ud90b\udcde\udb7b\udfdd": {}, "XS\ud8a6\ude31>\u0085\u00af\ud811\ude3e\u008c\u00c2\u001c~\udad9\udcd878f": {"\u001d": [[0.0, -3278, true], {"\u00d7\u00e1\u0017\ub5f4": null}, [true, true]], "I\uda2e\udd1c\u0094\u00d3S/\u00fa \udae5\udecf": [{}, {"\u00fd.": -14440, "\udbf4\uddbf\u0016\nB\u00ef": "", "\u00fd3(\u00c1I": "h\u00cd\u00ef"}, {}], "": []}, "C": {"": [{"\ud9ac\uded7\u0001\ud8d2\udda8\u00ea\u00de\u008f\u0017": null, "\u00ce\u00ae\u0083\uda88\udcbb": "\u0004\udb60\ude8f\u0085", "\u00ec\u0085": 4.2590606585499883e-299}]}}, "\u00a9\u0006\u0002q\u00e7\ud816\udfb9%\u0013\ud82f\udfaf!\u0010": [{"\u00ed\u0087\u00f9\ud91f\udd44\u00e0\ud972\udf59\udb35\uded7N": null, "": "\u00b1"}, {"": [], "\udbe9\udf0e\u0018\u00b8\u00c2\u609b\udbaa\uddbd\u00a1\u0001\u00fe\ud866\udec7\u00ba\u00c2\udb89\ude72\ud940\udd14\u00e8I\u000e\u001f": null, "\u00bb\f\u0001\u00a4": {"u\u00ab\ud89a\udcabw\u00d9\u00b2": -23692, "\uda7d\udd72:": -1.7976931348623157e+308, "\u0013": "}\b\u00bd\u0095"}}], "8": [[{}, [], {"F": "\rc\uda92\udea9\u009e\u001b\ud9a0\ude9dX\ud9a0\udebd\u00b6\u0095M+\u0012\u0004\u00e2\u00e1\u0094\u00d4\u00f4\u00d6\u00f5\u0006\u00ee", "\u00b9\ud936\udfb3\uc550\ud9bf\uddfd": 11500, "\udad6\udc76\u00ce\ud804\ude2f\u008c\u0099\uda16\ude5f\u00a9.q\u00cf\u0019\u00cd": "w\u00d3"}]]}'
